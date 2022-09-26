@@ -68,7 +68,7 @@ if (galleryImages) {
 				let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
 
 				let newNextBtn = document.createElement("a");
-				let btnNextText = document.createTextNode("Next");
+				let btnNextText = document.createTextNode(">");
 				newNextBtn.appendChild(btnNextText);
 				container.appendChild(newNextBtn);
 				newNextBtn.setAttribute("class", "img-btn-next");
@@ -76,7 +76,7 @@ if (galleryImages) {
 				newNextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
 
 				let newPrevBtn = document.createElement("a");
-				let btnPrevText = document.createTextNode("Prev");
+				let btnPrevText = document.createTextNode("<");
 				newPrevBtn.appendChild(btnPrevText);
 				container.appendChild(newPrevBtn);
 				newPrevBtn.setAttribute("class", "img-btn-prev");
