@@ -54,7 +54,6 @@ header a {
 	position: fixed;
 	z-index: 50;
 	transition: 0.4s;
-	/* backdrop-filter: blur(5px); */
 }
 
 .header::before {
@@ -66,12 +65,16 @@ header a {
 	position: absolute;
 	z-index: 2;
 	background-color: #e9eaec;
-	/* opacity: 20%; */
 }
 
 .header__name {
 	text-transform: uppercase;
 	z-index: 2;
+}
+
+.header__name:hover {
+	transition: 0.5s;
+	color: #000000;
 }
 
 .header__body {
@@ -83,8 +86,6 @@ header a {
 }
 
 .header__list {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	gap: 80px;
 	position: relative;
@@ -92,13 +93,19 @@ header a {
 }
 
 .header__link:hover {
-	color: #7b7770;
-	transition: all 0.3s ease 0s;
+	color: #000000;
+	transition: all 0.5s ease 0s;
 }
 
 .header__number {
 	font-size: 0.875rem;
 	z-index: 2;
+}
+
+@media (max-width: 62.56125em) {
+	.header__number {
+		display: none;
+	}
 }
 
 /* Header Burger */
@@ -228,6 +235,13 @@ header a {
 	font-size: 4.5rem;
 }
 
+@media (max-width: 62.56125em) {
+	.fullscreen__title {
+		padding: 100px 0px 0px 0px;
+		font-size: 2.5rem;
+	}
+}
+
 .fullscreen__text {
 	max-width: 130ch;
 	margin: 0px auto;
@@ -240,13 +254,18 @@ header a {
 	display: inline-block;
 	align-self: center;
 	margin: 0px 0px 60px 0px;
-	padding: 0px 20px;
+	padding: 0px 15px;
 	color: #616060;
 	font-weight: 700;
-	line-height: 70px;
+	line-height: 60px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	background-color: #e8d7ac;
+}
+
+.fullscreen__button:hover {
+	transition: 0.5s;
+	background-color: #d4a373;
 }
 
 .fullscreen__socials {
@@ -254,6 +273,18 @@ header a {
 	justify-content: flex-end;
 	gap: 30px;
 	padding: 0px 0px 50px 0px;
+	position: relative;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.fullscreen__socials a {
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.fullscreen__socials a:hover {
+	transform: translateY(-10px);
 }
 
 .fullscreen__socials img {
@@ -274,8 +305,26 @@ header a {
 	padding: 100px 100px;
 }
 
-.biography__description {
-	padding: 0px 0px 0px 50px;
+@media (max-width: 52.561em) {
+	.biography__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 40px 20px;
+	}
+
+	.biography__image {
+		margin: 0px -50px 40px 0px;
+	}
+}
+
+.biography__image {
+	padding: 0px 50px 0px 0px;
+}
+
+.biography__image img {
+	max-width: 100%;
 }
 
 .biography__title {
@@ -284,12 +333,8 @@ header a {
 
 .biography__text {
 	line-height: 1.5;
-	margin: 0px 0px 30px 0px;
+	/* margin: 0px 0px 30px 0px; */
 	max-width: 60ch;
-}
-
-.biography__button {
-	background: url("../img/background-decor/orange.png") no-repeat left;
 }
 
 .biography__button {
@@ -301,6 +346,7 @@ header a {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	background: url("../img/background-decor/orange.png") no-repeat left;
 	background-size: 50%;
 }
 
@@ -309,8 +355,6 @@ header a {
 }
 
 .biography__arrow {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 }
@@ -341,21 +385,22 @@ header a {
 }
 
 .certificate__row {
-	display: -ms-grid;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
 }
 
 .certificate__body {
-	padding: 120px 0px 120px 70px;
-	background: url("../img/certificateBg.png") center no-repeat;
-	background-size: cover;
+	border: 25px solid #b88846;
+	border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
+		25;
+	/* padding: 120px 0px 120px 70px; */
+	/* background: url("../img/certificateBg.jpg") center no-repeat; */
+	/* background-size: cover; */
 }
 
 .certificate__text {
 	max-width: 20ch;
-	padding: 0px 0px 60px 0px;
 	font-size: 1.125rem;
 	background: url("../img/background-decor/orange.png") 0% -20% no-repeat;
 }
@@ -378,7 +423,7 @@ header a {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	grid-gap: 10px;
+	gap: 7px;
 	grid-template-areas:
 		"img1 img1 img2 img2 img3 img4"
 		"img1 img1 img6 img6 img7 img4"
@@ -512,7 +557,7 @@ header a {
 	position: fixed;
 	top: 48vh;
 	z-index: 500;
-	font-size: 12px;
+	font-size: 0.75rem;
 	color: #ffffff;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -525,14 +570,19 @@ header a {
 .gallery__button {
 	display: inline-block;
 	align-self: center;
-	margin: 0px 0px 130px 0px;
-	padding: 0px 20px;
+	margin: 0px 0px 60px 0px;
+	padding: 0px 15px;
 	color: #616060;
 	font-weight: 700;
-	line-height: 70px;
+	line-height: 60px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	background-color: #e8d7ac;
+}
+
+.gallery__button:hover {
+	transition: 0.5s;
+	background-color: #d4a373;
 }
 
 /* Interier */
@@ -549,7 +599,7 @@ header a {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	grid-gap: 10px;
+	gap: 7px;
 	grid-template-areas:
 		"img__1 img__1 img__1 img__2 img__2"
 		"img__3 img__3 img__4 img__4 img__4";
@@ -662,13 +712,14 @@ header a {
 	background-color: #e8d7ac;
 	border-color: transparent;
 	color: #616060;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 2px;
 	min-height: 50px;
 }
 
 .submit:hover {
+	transition: 0.5s;
 	background-color: #d4a373;
 	cursor: pointer;
 }
@@ -676,26 +727,12 @@ header a {
 /* Footer */
 
 .footer {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 25px 50px;
 	color: #ffffff;
 	background: rgb(40, 37, 37);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgb(40, 37, 37)),
-		to(rgb(223, 223, 232))
-	);
-	background: -o-linear-gradient(
-		left,
-		rgb(40, 37, 37) 0%,
-		rgb(223, 223, 232) 100%
-	);
 	background: linear-gradient(
 		90deg,
 		rgb(40, 37, 37) 0%,
@@ -704,8 +741,6 @@ header a {
 }
 
 .footer__socials {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 	gap: 30px;
