@@ -35,6 +35,20 @@ document.querySelectorAll(".header__name, .header__link").forEach(n => n.addEven
 	menu.classList.remove("active");
 }))
 
+// Biography readmore button
+var i = 0;
+function readmore() {
+	if (!i) {
+		document.querySelector(".biography__moretext").style.display = "inline";
+		document.querySelector(".biography__button").innerHTML = "Дізнатись менше";
+		i = 1;
+	} else {
+		document.querySelector(".biography__moretext").style.display = "none";
+		document.querySelector(".biography__button").innerHTML = "Дізнатись більше";
+		i = 0;
+	}
+}
+
 // Gallery Images
 if (galleryImages) {
 	// Create onclick function for each image
