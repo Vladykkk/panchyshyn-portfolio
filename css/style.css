@@ -272,19 +272,6 @@ header a {
 	line-height: 2;
 }
 
-.fullscreen__button {
-	display: inline-block;
-	align-self: center;
-	margin: 0px 0px 60px 0px;
-	padding: 0px 15px;
-	color: #616060;
-	font-weight: 700;
-	line-height: 50px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	background-color: #e8d7ac;
-}
-
 .fullscreen__button:hover {
 	transition: 0.5s;
 	background-color: #d4a373;
@@ -320,6 +307,13 @@ header a {
 }
 
 /* Biography */
+
+.biography__body {
+	background-image: url("../img/background-decor/paint.png");
+	background-repeat: no-repeat;
+	background-position: 31.5% 103%;
+	padding: 0px 0px 100px 0px;
+}
 
 .biography {
 	max-width: 1194px;
@@ -376,7 +370,7 @@ header a {
 	display: inline-block;
 	align-self: center;
 	padding: 0px 20px;
-	line-height: 70px;
+	line-height: 50px;
 	color: #616060;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -385,52 +379,31 @@ header a {
 	background-size: 50%;
 }
 
-.biography__button a {
-	color: #616060;
-}
-
-.biography__arrow {
-	display: flex;
-	align-items: center;
-}
-
-/* Button arrow */
-
-.arrow {
-	border: solid #616060;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 3px;
-	margin: 0px 0px 0px 20px;
-}
-
-.down {
-	transform: rotate(45deg);
-}
-
 /* Certificate */
 
 .certificate {
 	margin: 80px 0px 140px 0px;
+	background-image: url("../img/background-decor/paint.png");
+	background-repeat: no-repeat;
+	background-position: 65% 90%;
 }
 
 .certificate__title {
 	text-align: center;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 40px 0px;
 }
 
 .certificate__row {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 20px;
 }
 
 .certificate__body {
-	padding: 10px;
-	/* border: 25px solid #b88846; */
-	/* border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E")
-		25; */
-	background: url("../img/background-decor/orange.png") 0% 0% no-repeat;
+	padding: 50px 0px 50px 15px;
+	margin: 0px 20px;
+	border: 40px solid;
+	border-image: url("../img/certificate_bg.jpg") 50;
+	background: url("../img/background-decor/orange.png") 0% 23% no-repeat;
 }
 
 .certificate__text {
@@ -603,16 +576,6 @@ header a {
 }
 
 .gallery__button {
-	display: inline-block;
-	align-self: center;
-	margin: 0px 0px 60px 0px;
-	padding: 0px 15px;
-	color: #616060;
-	font-weight: 700;
-	line-height: 60px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	background-color: #e8d7ac;
 }
 
 .gallery__button:hover {
@@ -741,24 +704,6 @@ header a {
 	min-height: 45px;
 }
 
-.submit {
-	margin: 20px 0px 0px 0px;
-	padding: 10px;
-	background-color: #e8d7ac;
-	border-color: transparent;
-	color: #616060;
-	font-size: 1rem;
-	font-weight: 700;
-	letter-spacing: 2px;
-	min-height: 50px;
-}
-
-.submit:hover {
-	transition: 0.5s;
-	background-color: #d4a373;
-	cursor: pointer;
-}
-
 /* Footer */
 
 .footer {
@@ -782,7 +727,13 @@ header a {
 }
 
 .footer__socials img {
-	width: 30px;
+	width: 40px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.fullscreen__socials img {
 }
 
 .footer__socials p {
@@ -798,4 +749,23 @@ header a {
 
 .title {
 	font-size: 1.5rem;
+}
+
+.button {
+	display: inline-block;
+	align-self: center;
+	margin: 0px 0px 60px 0px;
+	padding: 0px 15px;
+	color: #616060;
+	font-weight: 700;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #e8d7ac;
+}
+
+.button:hover {
+	transition: 0.5s;
+	background-color: #d4a373;
+	cursor: pointer;
 }
