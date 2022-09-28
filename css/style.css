@@ -64,7 +64,7 @@ header a {
 	left: 0;
 	position: absolute;
 	z-index: 2;
-	background-color: #e9eaec;
+	background-color: rgba(211, 211, 211, 0.8);
 }
 
 .header__name {
@@ -100,7 +100,7 @@ header a {
 .header__link::after {
 	content: "";
 	position: absolute;
-	background-color: #000000;
+	background-color: #6c757d;
 	height: 3px;
 	width: 0;
 	left: 0;
@@ -433,9 +433,9 @@ header a {
 	grid-template-rows: auto;
 	gap: 7px;
 	grid-template-areas:
-		"img1 img1 img2 img2 img3 img4"
-		"img1 img1 img6 img6 img7 img4"
-		"img5 img5 img6 img6 img8 img8";
+		"img_1 img_1 img_2 img_2 img_3 img_4"
+		"img_1 img_1 img_6 img_6 img_7 img_4"
+		"img_5 img_5 img_6 img_6 img_8 img_8";
 	margin: 0px 0px 100px 0px;
 }
 
@@ -452,45 +452,45 @@ header a {
 
 .gallery__images .img-1 {
 	height: 510px;
-	grid-area: img1;
-	background-image: url("../img/gallery/img1.jpg");
+	grid-area: img_1;
+	background-image: url("../img/gallery/img_1.jpg");
 }
 
 .gallery__images .img-2 {
-	grid-area: img2;
-	background-image: url("../img/gallery/img2.jpg");
+	grid-area: img_2;
+	background-image: url("../img/gallery/img_2.jpg");
 }
 
 .gallery__images .img-3 {
-	grid-area: img3;
-	background-image: url("../img/gallery/img3.jpg");
+	grid-area: img_3;
+	background-image: url("../img/gallery/img_3.jpg");
 }
 
 .gallery__images .img-4 {
 	height: 510px;
-	grid-area: img4;
-	background-image: url("../img/gallery/img4.jpg");
+	grid-area: img_4;
+	background-image: url("../img/gallery/img_4.jpg");
 }
 
 .gallery__images .img-5 {
-	grid-area: img5;
-	background-image: url("../img/gallery/img5.jpg");
+	grid-area: img_5;
+	background-image: url("../img/gallery/img_5.jpg");
 }
 
 .gallery__images .img-6 {
 	height: 510px;
-	grid-area: img6;
-	background-image: url("../img/gallery/img6.jpg");
+	grid-area: img_6;
+	background-image: url("../img/gallery/img_6.jpg");
 }
 
 .gallery__images .img-7 {
-	grid-area: img7;
-	background-image: url("../img/gallery/img7.jpg");
+	grid-area: img_7;
+	background-image: url("../img/gallery/img_7.jpg");
 }
 
 .gallery__images .img-8 {
-	grid-area: img8;
-	background-image: url("../img/gallery/img8.jpg");
+	grid-area: img_8;
+	background-image: url("../img/gallery/img_8.jpg");
 }
 
 /* Gallery image titles */
@@ -617,23 +617,23 @@ header a {
 .interier__images .img__1 {
 	/* height: 510px; */
 	grid-area: img__1;
-	background-image: url("../img/interier/img1.jpg");
+	background-image: url("../img/interier/img_1.jpg");
 }
 
 .interier__images .img__2 {
 	grid-area: img__2;
-	background-image: url("../img/interier/img2.jpg");
+	background-image: url("../img/interier/img_2.jpg");
 }
 
 .interier__images .img__3 {
 	grid-area: img__3;
-	background-image: url("../img/interier/img3.jpg");
+	background-image: url("../img/interier/img_3.jpg");
 }
 
 .interier__images .img__4 {
 	/* height: 510px; */
 	grid-area: img__4;
-	background-image: url("../img/interier/img4.jpg");
+	background-image: url("../img/interier/img_4.jpg");
 }
 
 /* Gallery image titles */
