@@ -41,7 +41,7 @@ header a {
 
 .content {
 	flex: 1 1 auto;
-	padding: 0px 20px;
+	padding: 0px 15px;
 }
 
 /* Header */
@@ -105,7 +105,7 @@ header a {
 	width: 0;
 	left: 0;
 	bottom: -10px;
-	transition: 0.3s;
+	transition: all 0.3s;
 }
 
 .header__link:hover {
@@ -309,10 +309,11 @@ header a {
 /* Biography */
 
 .biography__body {
-	background-image: url("../img/background-decor/paint.png");
-	background-repeat: no-repeat;
-	background-position: 31.5% 103%;
-	padding: 0px 0px 100px 0px;
+	/* background-image: url("../img/background-decor/paint.png"); */
+	/* background-repeat: no-repeat; */
+	/* background-position: 31.5% 103%; */
+	/* padding: 0px 0px 100px 0px; */
+	margin: 0px 0px 80px 0px;
 }
 
 .biography {
@@ -379,13 +380,18 @@ header a {
 	background-size: 50%;
 }
 
+.biography__button:hover {
+	transition: all 0.3s;
+	color: #000000;
+}
+
 /* Certificate */
 
 .certificate {
-	margin: 80px 0px 140px 0px;
-	background-image: url("../img/background-decor/paint.png");
-	background-repeat: no-repeat;
-	background-position: 65% 90%;
+	margin: 0px 0px 80px 0px;
+	/* background-image: url("../img/background-decor/paint.png"); */
+	/* background-repeat: no-repeat; */
+	/* background-position: 65% 90%; */
 }
 
 .certificate__title {
@@ -404,6 +410,17 @@ header a {
 	border: 40px solid;
 	border-image: url("../img/certificate_bg.jpg") 50;
 	background: url("../img/background-decor/orange.png") 0% 23% no-repeat;
+}
+
+@media (max-width: 65.125em) {
+	.certificate__row {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 70px;
+	}
+	.certificate__body {
+		margin: 0 auto;
+	}
 }
 
 .certificate__text {
@@ -437,6 +454,27 @@ header a {
 		"img_1 img_1 img_6 img_6 img_7 img_4"
 		"img_5 img_5 img_6 img_6 img_8 img_8";
 	margin: 0px 0px 100px 0px;
+}
+
+@media (max-width: 48.061em) {
+	.gallery__images {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"img_1"
+			"img_2"
+			"img_3"
+			"img_4"
+			"img_5"
+			"img_6"
+			"img_7"
+			"img_8";
+		gap: 15px;
+	}
+
+	.gallery__button {
+		width: 100%;
+	}
 }
 
 .gallery__images .gallery__img {
@@ -575,9 +613,6 @@ header a {
 	opacity: 0.8;
 }
 
-.gallery__button {
-}
-
 .gallery__button:hover {
 	transition: 0.5s;
 	background-color: #d4a373;
@@ -590,7 +625,7 @@ header a {
 }
 
 .interier__title {
-	margin: 0px 0px 85px 0px;
+	margin: 0px 0px 35px 0px;
 }
 
 .interier__images {
@@ -601,6 +636,23 @@ header a {
 	grid-template-areas:
 		"img__1 img__1 img__1 img__2 img__2"
 		"img__3 img__3 img__4 img__4 img__4";
+}
+
+@media (max-width: 48.061em) {
+	.interier__images {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"img__1"
+			"img__2"
+			"img__3"
+			"img__4"
+			"img__5"
+			"img__6"
+			"img__7"
+			"img__8";
+		gap: 15px;
+	}
 }
 
 .interier__images .interier__img {
@@ -660,12 +712,36 @@ header a {
 	transition: all ease-in-out 0.3s;
 }
 
+/* Contact */
 .contact {
 	max-width: 1194px;
 	margin: 0px auto;
-	padding: 200px 0px 200px 70px;
+	padding: 50px 0px 50px 70px;
 	background-image: url("../img/conctact_bg.jpg");
 	background-size: cover;
+}
+
+@media (max-width: 70.5em) {
+	.contact {
+		text-align: center;
+		padding: 0px 20px;
+	}
+
+	.contact__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact__control {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.contact__button {
+		max-width: 600px;
+		width: 100%;
+	}
 }
 
 .contact__container {
@@ -679,7 +755,7 @@ header a {
 }
 
 .contact__text p:nth-child(1) {
-	margin: 0px 0px 130px 0px;
+	margin: 0px 0px 50px 0px;
 }
 
 .contact__text p {
@@ -687,7 +763,7 @@ header a {
 }
 
 .contact__form {
-	padding-top: 50px;
+	padding-top: 20px;
 	transition: all 4s ease-in-out;
 }
 
@@ -705,7 +781,6 @@ header a {
 }
 
 /* Footer */
-
 .footer {
 	display: flex;
 	align-items: center;
@@ -718,6 +793,20 @@ header a {
 		rgb(40, 37, 37) 0%,
 		rgb(223, 223, 232) 100%
 	);
+}
+
+@media (max-width: 52.75em) {
+	.footer {
+	}
+
+	.footer__contacts {
+	}
+}
+
+.footer__contacts {
+	display: flex;
+	gap: 30px;
+	margin: 0px 0px 0px 30px;
 }
 
 .footer__socials {
@@ -733,16 +822,8 @@ header a {
 	padding: 5px;
 }
 
-.fullscreen__socials img {
-}
-
 .footer__socials p {
 	margin: 0px 0px 0px 30px;
-}
-
-.footer__contacts {
-	display: flex;
-	gap: 50px;
 }
 
 /* Other classes */
