@@ -309,10 +309,10 @@ header a {
 /* Biography */
 
 .biography__body {
-	/* background-image: url("../img/background-decor/paint.png"); */
-	/* background-repeat: no-repeat; */
-	/* background-position: 31.5% 103%; */
-	/* padding: 0px 0px 100px 0px; */
+	background-image: url("../img/background-decor/paint.png");
+	background-repeat: no-repeat;
+	background-position: 31.5% 103%;
+	padding: 0px 0px 100px 0px;
 	margin: 0px 0px 80px 0px;
 }
 
@@ -471,7 +471,6 @@ header a {
 			"img_8";
 		gap: 15px;
 	}
-
 	.gallery__button {
 		width: 100%;
 	}
