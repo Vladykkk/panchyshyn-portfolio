@@ -258,8 +258,8 @@ header a {
 	grid-template-areas:
 		"img_1 img_1 img_2 img_2 img_3"
 		"img_4 img_5 img_5 img_6 img_6"
-		"img_7 img_8 img_8 img_9 img_10"
-		"img_11 img_11 img_9 img_11 img_11";
+		"img_7 img_8 img_8 img_9 img_9"
+		"img_10 img_11 img_11 img_11 img_11";
 	margin: 0px 0px 100px 0px;
 }
 
@@ -295,12 +295,13 @@ header a {
 /* Gallery Images */
 
 .gallery__images .img-1 {
+	height: 510px;
 	grid-area: img_1;
 	background-image: url("../img/gallery/img_1.jpg");
 }
 
 .gallery__images .img-2 {
-	/* height: 510px; */
+	height: 510px;
 	grid-area: img_2;
 	background-image: url("../img/gallery/img_2.jpg");
 }
@@ -318,6 +319,7 @@ header a {
 }
 
 .gallery__images .img-5 {
+	height: 510px;
 	grid-area: img_5;
 	background-image: url("../img/gallery/img_5.jpg");
 }
