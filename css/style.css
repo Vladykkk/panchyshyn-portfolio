@@ -85,6 +85,11 @@ header a {
 	position: relative;
 }
 
+.header__number {
+	font-size: 0.875rem;
+	z-index: 2;
+}
+
 .header__list {
 	display: flex;
 	gap: 80px;
@@ -114,11 +119,6 @@ header a {
 
 .header__link:hover::after {
 	width: 100%;
-}
-
-.header__number {
-	font-size: 0.875rem;
-	z-index: 2;
 }
 
 @media (max-width: 62.56125em) {
@@ -309,10 +309,10 @@ header a {
 /* Biography */
 
 .biography__body {
-	/* background-image: url("../img/background-decor/paint.png"); */
-	/* background-repeat: no-repeat; */
-	/* background-position: 31.5% 103%; */
-	/* padding: 0px 0px 100px 0px; */
+	background-image: url("../img/background-decor/paint.png");
+	background-repeat: no-repeat;
+	background-position: 31.5% 103%;
+	padding: 0px 0px 100px 0px;
 	margin: 0px 0px 80px 0px;
 }
 
@@ -389,9 +389,9 @@ header a {
 
 .certificate {
 	margin: 0px 0px 80px 0px;
-	/* background-image: url("../img/background-decor/paint.png"); */
-	/* background-repeat: no-repeat; */
-	/* background-position: 65% 90%; */
+	background-image: url("../img/background-decor/paint.png");
+	background-repeat: no-repeat;
+	background-position: 65% 90%;
 }
 
 .certificate__title {
@@ -797,15 +797,37 @@ header a {
 
 @media (max-width: 52.75em) {
 	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 25px 40px 20px 0px;
+	}
+
+	.footer__socials {
+		align-self: flex-end;
+		order: 3;
+	}
+
+	.footer__copyright {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0px 0px 30px 0px;
 	}
 
 	.footer__contacts {
+		display: flex;
+		flex-direction: column;
+		padding: 0px 0px 20px 0px;
 	}
 }
 
 .footer__contacts {
 	display: flex;
 	gap: 30px;
+	margin: 0px 0px 0px 30px;
+}
+
+.footer__copyright {
 	margin: 0px 0px 0px 30px;
 }
 
