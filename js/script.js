@@ -73,7 +73,7 @@ if (galleryImages) {
 			// Insert image inside window
 			let newImg = document.createElement("img");
 			newImgWindow.appendChild(newImg);
-			newImg.setAttribute("src", "img/gallery/" + setNewImgUrl);
+			newImg.setAttribute("src", "/img/gallery/" + setNewImgUrl);
 			newImg.setAttribute("id", "current-image");
 
 			// Prev/Next buttons
@@ -133,7 +133,7 @@ function changeImg(changeDir) {
 			calcNewImg = galleryImages.length;
 		}
 	}
-	newImg.setAttribute("src", "img/gallery/img_" + calcNewImg + ".jpg");
+	newImg.setAttribute("src", "/img/gallery/img_" + calcNewImg + ".jpg");
 	newImg.setAttribute("id", "current-image");
 
 	// Adjust our global variable "getLatestOpenedImg"
@@ -227,7 +227,7 @@ function changeImgInterier(changeDir) {
 			calcNewImg = interierImages.length;
 		}
 	}
-	newImg.setAttribute("src", "img/interier/img_" + calcNewImg + ".jpg");
+	newImg.setAttribute("src", "img/interier/img_" + calcNewImg + ".png");
 	newImg.setAttribute("id", "current-image");
 
 	// Adjust our global variable "getLatestOpenedImg"
