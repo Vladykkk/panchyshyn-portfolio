@@ -165,18 +165,16 @@ header a {
 	height: 32px;
 	margin-right: 10px;
 	vertical-align: middle;
-	background-image: url("../img/icons/language/usa.svg");
+	background-image: url("../img/icons/language/ukraine.svg");
 }
 
 .header__language ul li a:hover {
 	background-color: #f2f2f2;
-	transition: 0.5s;
 }
 
 .header__language-selected {
 	display: flex;
 	justify-content: space-between;
-	width: 65px;
 	line-height: 2;
 	cursor: pointer;
 }
@@ -186,7 +184,8 @@ header a {
 	display: block;
 	width: 32px;
 	height: 32px;
-	background-image: url("../img/icons/language/ukraine.svg");
+	background-image: url("../img/icons/language/usa.svg");
+	margin-right: 10px;
 }
 
 /* Header Burger */
@@ -437,7 +436,7 @@ header a {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	background: url("../img/background-decor/orange.png") no-repeat left;
-	background-size: 50%;
+	background-size: 60%;
 }
 
 .biography__button:hover {
@@ -800,21 +799,7 @@ header a {
 	.contact__button {
 		max-width: 600px;
 		width: 100%;
-		margin: 0px 0px 40px 0px;
 	}
-}
-
-.contact__button {
-	display: block;
-	align-self: center;
-	margin: 0px 0px 60px 0px;
-	padding: 0px 15px;
-	color: #616060;
-	font-weight: 700;
-	line-height: 50px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	background-color: #e8d7ac;
 }
 
 .contact__container {
@@ -851,6 +836,25 @@ header a {
 
 .contact input {
 	min-height: 45px;
+}
+
+.contact__button {
+	display: block;
+	align-self: center;
+	margin: 0px 0px 60px 0px;
+	padding: 0px 15px;
+	color: #616060;
+	font-weight: 700;
+	line-height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #e8d7ac;
+}
+
+.contact__button:hover {
+	transition: 0.5s;
+	background-color: #d4a373;
+	cursor: pointer;
 }
 
 /* Footer */

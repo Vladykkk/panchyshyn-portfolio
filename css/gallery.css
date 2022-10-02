@@ -38,7 +38,7 @@ header a {
 	min-height: 100vh;
 	overflow: hidden;
 	padding: 0px 15px;
-	background-image: url("../img/welcome-screen/welcome_background.png");
+	background-image: url("../img/welcome_screen.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -126,20 +126,83 @@ header a {
 	width: 100%;
 }
 
-@media (max-width: 62.56125em) {
+@media (max-width: 71.5em) {
 	.header__number {
 		display: none;
 	}
 }
 
+/* Language */
+
+.header__language {
+	padding: 0px 30px 0px 30px;
+	z-index: 2;
+}
+
+.header__language:hover ul {
+	display: block;
+}
+
+.header__language ul {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #f8f8f8;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+.header__language ul li {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__language ul li a {
+	display: block;
+	width: 125px;
+	padding: 5px 10px;
+}
+
+.header__language ul li a::before {
+	content: "";
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-image: url("../img/icons/language/usa.svg");
+}
+
+.header__language ul li a:hover {
+	background-color: #f2f2f2;
+	transition: 0.5s;
+}
+
+.header__language-selected {
+	display: flex;
+	justify-content: space-between;
+	width: 65px;
+	line-height: 2;
+	cursor: pointer;
+}
+
+.header__language-selected::before {
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-image: url("../img/icons/language/ukraine.svg");
+}
+
 /* Header Burger */
 
-@media (max-width: 62.56125em) {
+@media (max-width: 71.5em) {
 	.header__burger {
 		display: block;
 		height: 20px;
 		width: 30px;
 		position: relative;
+		order: 3;
 		z-index: 3;
 	}
 
@@ -494,11 +557,17 @@ header a {
 	gap: 30px;
 }
 
+.footer__socials a {
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.footer__socials a:hover {
+	transform: translateY(-10px);
+}
+
 .footer__socials img {
 	width: 40px;
-	border: 1px solid #ffffff;
-	border-radius: 50%;
-	padding: 5px;
 }
 
 .footer__socials p {
