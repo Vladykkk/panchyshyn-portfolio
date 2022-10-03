@@ -159,7 +159,7 @@ header a {
 
 .header__language ul li a {
 	display: block;
-	width: 125px;
+	width: 145px;
 	padding: 5px 10px;
 }
 
@@ -181,7 +181,7 @@ header a {
 .header__language-selected {
 	display: flex;
 	justify-content: space-between;
-	width: 65px;
+	width: 105px;
 	line-height: 2;
 	cursor: pointer;
 }

@@ -40,7 +40,7 @@ var i = 0;
 function readmore() {
 	if (!i) {
 		document.querySelector(".biography__moretext").style.display = "inline";
-		document.querySelector(".biography__button").innerHTML = "Дізнатись менше";
+		document.querySelector(".biography__button").innerHTML = "Згорнути";
 		i = 1;
 	} else {
 		document.querySelector(".biography__moretext").style.display = "none";
