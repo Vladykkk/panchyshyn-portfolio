@@ -31,17 +31,17 @@ header a {
 /* Wrapper */
 
 .wrapper {
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 	overflow: hidden;
 }
 
 /* Content */
 
 .content {
-	flex: 1 1 auto;
 	padding: 0px 15px;
+	flex: 1 1 auto;
 }
 
 /* Header */
@@ -597,7 +597,7 @@ header a {
 }
 
 .gallery__img a {
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -759,7 +759,7 @@ header a {
 }
 
 .interier__img a {
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: #ffffff;
 	text-transform: uppercase;
 }
