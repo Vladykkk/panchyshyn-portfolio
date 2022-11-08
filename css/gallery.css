@@ -94,7 +94,7 @@ header a {
 	z-index: 2;
 }
 
-@media (max-width: 70.688em) {
+@media (max-width: 60.688em) {
 	.header__number {
 		display: none;
 	}
@@ -177,7 +177,7 @@ header a {
 }
 
 .header__language-selected {
-	width: 105px;
+	width: 115px;
 	line-height: 2;
 	display: flex;
 	justify-content: space-between;
@@ -194,7 +194,7 @@ header a {
 
 /* Header Burger */
 
-@media (max-width: 70.688em) {
+@media (max-width: 60.688em) {
 	.header__burger {
 		display: block;
 		height: 20px;
@@ -286,7 +286,7 @@ header a {
 
 /* Disabling out of burger menu scroll */
 
-@media (max-width: 70.688em) {
+@media (max-width: 60.688em) {
 	body.lock {
 		overflow: hidden;
 	}

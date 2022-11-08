@@ -91,7 +91,7 @@ header a {
 	z-index: 2;
 }
 
-@media (max-width: 61.375em) {
+@media (max-width: 58.688em) {
 	.header__number {
 		display: none;
 	}
@@ -190,7 +190,7 @@ header a {
 
 /* Header Burger */
 
-@media (max-width: 61.375em) {
+@media (max-width: 58.688em) {
 	.header__burger {
 		height: 20px;
 		width: 30px;
@@ -282,7 +282,7 @@ header a {
 
 /* Disabling out of burger menu scroll */
 
-@media (max-width: 61.375em) {
+@media (max-width: 58.688em) {
 	body.lock {
 		overflow: hidden;
 	}
@@ -350,6 +350,7 @@ header a {
 }
 
 .fullscreen__socials a {
+	display: inline-block;
 	transition: 0.5s;
 }
 
@@ -677,7 +678,7 @@ header a {
 
 /* Interier */
 
-.interier {
+/* .interier {
 	text-align: center;
 }
 
@@ -714,11 +715,11 @@ header a {
 	background: center no-repeat;
 	background-size: cover;
 	cursor: pointer;
-}
+} */
 
-/* Gallery Images */
+/* Interier Gallery Images */
 
-.interier__images .img__1 {
+/* .interier__images .img__1 {
 	height: 499px;
 	grid-area: img__1;
 	background-image: url("../img/interier/img_1.png");
@@ -737,11 +738,11 @@ header a {
 .interier__images .img__4 {
 	grid-area: img__4;
 	background-image: url("../img/interier/img_4.png");
-}
+} */
 
-/* Gallery image titles */
+/* Interier Gallery image titles */
 
-.interier__img div {
+/* .interier__img div {
 	height: 100%;
 	width: 100%;
 	padding: 0px 10px;
@@ -761,7 +762,7 @@ header a {
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
-}
+} */
 
 /* Contact */
 .contact {
@@ -825,6 +826,11 @@ header a {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	background-color: #e8d7ac;
+}
+
+.contact__button:hover {
+	transition: 0.5s;
+	background-color: #d4a373;
 }
 
 .contact__form {

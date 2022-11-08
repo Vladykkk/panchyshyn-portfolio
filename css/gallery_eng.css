@@ -94,7 +94,7 @@ header a {
 	z-index: 2;
 }
 
-@media (max-width: 61.375em) {
+@media (max-width: 58.688em) {
 	.header__number {
 		display: none;
 	}
@@ -193,7 +193,7 @@ header a {
 
 /* Header Burger */
 
-@media (max-width: 61.375em) {
+@media (max-width: 58.688em) {
 	.header__burger {
 		height: 20px;
 		width: 30px;
@@ -285,7 +285,7 @@ header a {
 
 /* Disabling out of burger menu scroll */
 
-@media (max-width: 61.375em) {
+@media (max-width: 58.688em) {
 	body.lock {
 		overflow: hidden;
 	}
