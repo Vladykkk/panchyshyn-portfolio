@@ -5,7 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/english.css" />
-		<link rel="stylesheet" href="../css/reset.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
@@ -226,28 +225,6 @@
 					</div>
 				</section>
 
-				<!-- <section class="interier" id="interier">
-					<div class="interier__container">
-						<p class="interier__title title">
-							Paintings of the author in the interior
-						</p>
-						<div class="interier__images">
-							<div class="interier__img img__1">
-								<div><a href="#">"Lilac" 100х80 2003y.</a></div>
-							</div>
-							<div class="interier__img img__2">
-								<div><a href="#">"Gardener" 90х70 2005y.</a></div>
-							</div>
-							<div class="interier__img img__3">
-								<div><a href="#">"Sower" 90x70 2000y.</a></div>
-							</div>
-							<div class="interier__img img__4">
-								<div><a href="#">"Thanks maestro!" 90х70 2001y.</a></div>
-							</div>
-						</div>
-					</div>
-				</section> -->
-
 				<section class="contact" id="contact">
 					<div class="contact__container">
 						<div class="contact__text">
@@ -299,6 +276,67 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="form">
+					<form action="#" id="form" class="form__body">
+						<h2 class="form__title">Contact with me</h2>
+						<div class="form__item">
+							<label for="formName" class="form__label"> Full Name*: </label>
+							<input
+								id="formName"
+								type="text"
+								name="name"
+								class="form__input _req"
+							/>
+						</div>
+						<div class="form__item">
+							<label for="formEmail" class="form__label"> E-mail*: </label>
+							<input
+								id="formEmail"
+								type="text"
+								name="email"
+								class="form__input _req _email"
+							/>
+						</div>
+						<div class="form__item">
+							<label for="formNumber" class="form__label">
+								Phone Number*:
+							</label>
+							<input
+								id="formEmail"
+								type="number"
+								name="number"
+								class="form__input"
+							/>
+						</div>
+						<div class="form__item">
+							<label for="formMessage" class="form__label">Message:</label>
+							<textarea
+								name="message"
+								id="formMessage"
+								class="form__input"
+							></textarea>
+						</div>
+						<div class="form__item">
+							<div class="checkbox">
+								<input
+									id="formAgreement"
+									checked
+									type="checkbox"
+									name="agreement"
+									class="checkbox__input _req"
+								/>
+								<label for="formAgreement" class="checkbox__label"
+									><span>
+										I agree to the terms of the privacy policy and allow the use
+										of my personal data</span
+									>
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="form__button">Send</button>
+					</form>
+				</section>
 			</main>
 
 			<footer class="footer" id="socials">
@@ -323,6 +361,7 @@
 			</footer>
 
 			<script src="../js/english.js"></script>
+			<script src="../js/form.js"></script>
 		</div>
 	</body>
 </html>
