@@ -209,6 +209,8 @@ header a {
 		transform: scale(0);
 	}
 
+	/* Header menu */
+
 	.header__menu {
 		height: 100%;
 		width: 100%;
