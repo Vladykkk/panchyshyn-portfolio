@@ -87,7 +87,6 @@ if (galleryImages) {
 function closeImg() {
 	// Remove the image window
 	document.querySelector(".img-window").remove();
-
 	// Remove the prev/next buttons
 	document.querySelector(".img-btn-next").remove();
 	document.querySelector(".img-btn-prev").remove();
