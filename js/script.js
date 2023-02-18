@@ -2,7 +2,7 @@
 let burger = document.querySelector(".header__burger");
 let menu = document.querySelector(".header__menu");
 let list = document.querySelector(".header__list");
-let headerName = document.querySelector(".header__name")
+let headerName = document.querySelector(".header__name");
 let moveLock = document.querySelector("body");
 
 // Gallery variables
@@ -18,22 +18,24 @@ burger.onclick = function () {
 	burger.classList.toggle("active");
 	menu.classList.toggle("active");
 	moveLock.classList.toggle("lock");
-}
+};
 
 list.onclick = function () {
 	list.classList.remove("active");
 	moveLock.classList.toggle("lock");
-}
+};
 
 headerName.onclick = function () {
 	moveLock.classList.remove("lock");
-}
+};
 
 // Close menu on link click
-document.querySelectorAll(".header__name, .header__link").forEach(n => n.addEventListener("click", () => {
-	burger.classList.remove("active");
-	menu.classList.remove("active");
-}))
+document.querySelectorAll(".header__name, .header__link").forEach((n) =>
+	n.addEventListener("click", () => {
+		burger.classList.remove("active");
+		menu.classList.remove("active");
+	})
+);
 
 // Biography readmore button
 var i = 0;
@@ -56,9 +58,9 @@ if (galleryImages) {
 		image.onclick = function () {
 			// Get the image URL from our element CSS
 			let getElementCss = window.getComputedStyle(image);
-			let getFullImgUrl = getElementCss.getPropertyValue('background-image');
+			let getFullImgUrl = getElementCss.getPropertyValue("background-image");
 			let getImgUrlPos = getFullImgUrl.split("/img/gallery/");
-			let setNewImgUrl = getImgUrlPos[1].replace('")', '');
+			let setNewImgUrl = getImgUrlPos[1].replace('")', "");
 
 			// Save the image nr to use later with prev/next buttons
 			getLatestOpenedImg = index + 1;
@@ -69,6 +71,12 @@ if (galleryImages) {
 			container.appendChild(newImgWindow);
 			newImgWindow.setAttribute("class", "img-window");
 			newImgWindow.setAttribute("onclick", "closeImg()");
+			document.addEventListener("keyup", function (event) {
+				// Close the window on `Escape` key press
+				if (event.code === "Escape") {
+					closeImg();
+				}
+			});
 
 			// Insert image inside window
 			let newImg = document.createElement("img");
@@ -79,7 +87,7 @@ if (galleryImages) {
 			// Prev/Next buttons
 			newImg.onload = function () {
 				let imgWidth = this.width;
-				let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+				let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
 
 				let newNextBtn = document.createElement("a");
 				let btnNextText = document.createTextNode(">");
@@ -96,8 +104,8 @@ if (galleryImages) {
 				newPrevBtn.setAttribute("class", "img-btn-prev");
 				newPrevBtn.setAttribute("onclick", "changeImg(0)");
 				newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
-			}
-		}
+			};
+		};
 	});
 }
 
@@ -126,8 +134,7 @@ function changeImg(changeDir) {
 		if (calcNewImg > galleryImages.length) {
 			calcNewImg = 1;
 		}
-	}
-	else if (changeDir === 0) {
+	} else if (changeDir === 0) {
 		calcNewImg = getLatestOpenedImg - 1;
 		if (calcNewImg < 1) {
 			calcNewImg = galleryImages.length;
@@ -142,14 +149,14 @@ function changeImg(changeDir) {
 	// Change the button positions
 	newImg.onload = function () {
 		let imgWidth = this.width;
-		let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+		let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
 
 		let nextBtn = document.querySelector(".img-btn-next");
 		nextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
 
 		let prevBtn = document.querySelector(".img-btn-prev");
 		prevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
-	}
+	};
 }
 
 // Interier Images
@@ -159,9 +166,9 @@ if (interierImages) {
 		image.onclick = function () {
 			// Get the image URL from our element CSS
 			let getElementCss = window.getComputedStyle(image);
-			let getFullImgUrl = getElementCss.getPropertyValue('background-image');
+			let getFullImgUrl = getElementCss.getPropertyValue("background-image");
 			let getImgUrlPos = getFullImgUrl.split("/img/interier/");
-			let setNewImgUrl = getImgUrlPos[1].replace('")', '');
+			let setNewImgUrl = getImgUrlPos[1].replace('")', "");
 
 			// Save the image nr to use later with prev/next buttons
 			getLatestOpenedImg = index + 1;
@@ -182,7 +189,7 @@ if (interierImages) {
 			// Prev/Next buttons
 			newImg.onload = function () {
 				let imgWidth = this.width;
-				let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+				let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
 
 				let newNextBtn = document.createElement("a");
 				let btnNextText = document.createTextNode(">");
@@ -199,8 +206,8 @@ if (interierImages) {
 				newPrevBtn.setAttribute("class", "img-btn-prev");
 				newPrevBtn.setAttribute("onclick", "changeImgInterier(0)");
 				newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
-			}
-		}
+			};
+		};
 	});
 }
 
@@ -220,8 +227,7 @@ function changeImgInterier(changeDir) {
 		if (calcNewImg > interierImages.length) {
 			calcNewImg = 1;
 		}
-	}
-	else if (changeDir === 0) {
+	} else if (changeDir === 0) {
 		calcNewImg = getLatestOpenedImg - 1;
 		if (calcNewImg < 1) {
 			calcNewImg = interierImages.length;
@@ -236,12 +242,12 @@ function changeImgInterier(changeDir) {
 	// Change the button positions
 	newImg.onload = function () {
 		let imgWidth = this.width;
-		let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+		let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
 
 		let nextBtn = document.querySelector(".img-btn-next");
 		nextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
 
 		let prevBtn = document.querySelector(".img-btn-prev");
 		prevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
-	}
+	};
 }
