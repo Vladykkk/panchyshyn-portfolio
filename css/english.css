@@ -14,7 +14,7 @@
 
 .fullscreen {
 	height: 100%;
-	min-height: 100vh;
+	min-height: 100svh;
 	margin: 0px 0px 100px 0px;
 	display: flex;
 	background: url("../img/welcome_screen.png") center;
