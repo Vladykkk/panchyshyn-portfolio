@@ -1,0 +1,22 @@
+.title {
+  font-size: 1.5rem;
+}
+
+.button {
+  padding: 0px 15px;
+  display: inline-block;
+  align-self: center;
+  color: var(--colorprimary);
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: var(--coloraccent);
+
+  &:hover {
+    transition: var(--transition);
+    background-color: var(--coloraccent-hover);
+    cursor: pointer;
+  }
+}

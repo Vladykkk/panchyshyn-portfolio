@@ -1,0 +1,7 @@
+:root {
+  --colorprimary: #616060;
+  --coloraccent: #e8d7ac;
+  --coloraccent-hover: #d4a373;
+  --ff: "El Messiri";
+  --transition: 0.3s ease-in-out;
+}
