@@ -13,10 +13,44 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   background-color: var(--coloraccent);
+  border: none;
 
   &:hover {
     transition: var(--transition);
     background-color: var(--coloraccent-hover);
     cursor: pointer;
+  }
+}
+
+.form {
+  transition: var(--transition);
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 20px 0 20px 0;
+  font-size: 1.125rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.form-button {
+  padding: 0px 15px;
+  display: inline-block;
+  cursor: pointer;
+  align-self: center;
+  color: var(--colorprimary);
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: var(--coloraccent);
+  border: none;
+
+  &:hover {
+    transition: var(--transition);
+    background-color: var(--coloraccent-hover);
   }
 }

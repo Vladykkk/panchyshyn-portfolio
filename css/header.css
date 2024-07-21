@@ -68,6 +68,7 @@ header {
     gap: 80px;
     position: relative;
     z-index: 2;
+    list-style-type: none;
   }
 
   .header-link {

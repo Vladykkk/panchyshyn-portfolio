@@ -54,6 +54,7 @@
     justify-content: flex-end;
     gap: 30px;
     flex-wrap: wrap;
+    list-style-type: none;
 
     & a {
       display: inline-block;
@@ -140,6 +141,7 @@
     text-transform: uppercase;
     background: url("../img/background/orange.png") no-repeat left;
     background-size: contain;
+    border: none;
 
     &:hover {
       transition: var(--transition);
@@ -225,6 +227,7 @@
       background: var(--coloraccent);
       border-radius: 5px;
       box-shadow: 0 3px 5px -2px;
+      cursor: pointer;
 
       img {
         inline-size: 100%;
@@ -259,6 +262,11 @@
 
   & input {
     min-height: 45px;
+    border: none;
+  }
+
+  & textarea {
+    border: none;
   }
 
   .contact-container {
@@ -303,7 +311,7 @@
     }
   }
 
-  .contact-button {
+  /* .contact-button {
     padding: 0px 15px;
     display: inline-block;
     cursor: pointer;
@@ -314,12 +322,13 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: var(--coloraccent);
+    border: none;
 
     &:hover {
       transition: var(--transition);
       background-color: var(--coloraccent-hover);
     }
-  }
+  } */
 
   .contact-form {
     padding-top: 20px;

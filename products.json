@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "image": "../img/gallery/img_1.jpg",
+    "name": "Бузкове",
+    "size": "100x80",
+    "description": "none",
+    "year": "2003р."
+  },
+  {
+    "id": 2,
+    "image": "../img/gallery/img_2.jpg",
+    "name": "Дорога",
+    "size": "90x70",
+    "description": "none",
+    "year": "2002р."
+  },
+  {
+    "id": 3,
+    "image": "../img/gallery/img_3.jpg",
+    "name": "Садівник",
+    "size": "90x70",
+    "description": "none",
+    "year": "2005р."
+  },
+  {
+    "id": 4,
+    "image": "../img/gallery/img_4.jpg",
+    "name": "Спасибі маестро!",
+    "size": "90x70",
+    "description": "none",
+    "year": "2001р."
+  },
+  {
+    "id": 5,
+    "image": "../img/gallery/img_5.jpg",
+    "name": "Дорога",
+    "size": "90x70",
+    "description": "none",
+    "year": "2002р."
+  },
+  {
+    "id": 6,
+    "image": "../img/gallery/img_6.jpg",
+    "name": "Дорога",
+    "size": "90x70",
+    "description": "none",
+    "year": "2002р."
+  },
+  {
+    "id": 7,
+    "image": "../img/gallery/img_7.jpg",
+    "name": "Дорога",
+    "size": "70x80",
+    "description": "none",
+    "year": "2004р."
+  },
+  {
+    "id": 8,
+    "image": "../img/gallery/img_8.jpg",
+    "name": "Дорога",
+    "size": "90x70",
+    "description": "none",
+    "year": "2002р."
+  },
+  {
+    "id": 9,
+    "image": "../img/gallery/img_9.jpg",
+    "name": "Спогад",
+    "size": "80x70",
+    "description": "none",
+    "year": "2006р."
+  },
+  {
+    "id": 10,
+    "image": "../img/gallery/img_10.jpg",
+    "name": "Небеса Скіфії",
+    "size": "90x70",
+    "description": "none",
+    "year": "2005р."
+  },
+  {
+    "id": 11,
+    "image": "../img/gallery/img_11.jpg",
+    "name": "Передріздвяне",
+    "size": "70x90",
+    "description": "none",
+    "year": "2002р."
+  }
+]

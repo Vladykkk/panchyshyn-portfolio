@@ -46,6 +46,35 @@ function readmore() {
   }
 }
 
+// Single pruduct page
+
+let products = null;
+fetch("../products.json")
+  .then((response) => response.json())
+  .then((data) => {
+    products = data;
+    addDataToHTML();
+  });
+
+function addDataToHTML() {
+  let listProductHTML = document.querySelector(".media-scroller");
+
+  if (products != null) {
+    products.forEach((product) => {
+      let newProduct = document.createElement("a");
+      newProduct.href = "../html/detail.html?id=" + product.id;
+      newProduct.classList.add("item");
+      newProduct.innerHTML = `
+		 <div class="media-element">
+		 <img src="${product.image}">
+		 <h2 class="title">${product.name} ${product.size} ${product.year}</h2>
+		 </div>
+		 `;
+      listProductHTML.appendChild(newProduct);
+    });
+  }
+}
+
 // Form
 
 // document.addEventListener("DOMContentLoaded", function () {
