@@ -5,8 +5,8 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
-  color: var(--colorprimary);
-  font-family: var(--ff);
+  color: var(--clr-primary);
+  font-family: var(--font-family);
 }
 
 .wrapper {

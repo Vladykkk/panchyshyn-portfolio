@@ -6,18 +6,18 @@
   padding: 0px 15px;
   display: inline-block;
   align-self: center;
-  color: var(--colorprimary);
+  color: var(--clr-primary);
   font-weight: 700;
   text-decoration: none;
   line-height: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-color: var(--coloraccent);
+  background-color: var(--clr-accent);
   border: none;
 
   &:hover {
     transition: var(--transition);
-    background-color: var(--coloraccent-hover);
+    background-color: var(--clr-accent-hover);
     cursor: pointer;
   }
 }
@@ -34,6 +34,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid gray;
+  outline: none;
 }
 
 .form-button {
@@ -41,16 +42,16 @@
   display: inline-block;
   cursor: pointer;
   align-self: center;
-  color: var(--colorprimary);
+  color: var(--clr-primary);
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-color: var(--coloraccent);
+  background-color: var(--clr-accent);
   border: none;
 
   &:hover {
     transition: var(--transition);
-    background-color: var(--coloraccent-hover);
+    background-color: var(--clr-accent-hover);
   }
 }

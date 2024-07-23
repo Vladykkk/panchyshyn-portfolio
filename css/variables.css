@@ -1,7 +1,9 @@
 :root {
-  --colorprimary: #616060;
-  --coloraccent: #e8d7ac;
-  --coloraccent-hover: #d4a373;
-  --ff: "El Messiri";
+  --font-family: "El Messiri";
+
   --transition: 0.3s ease-in-out;
+
+  --clr-primary: #616060;
+  --clr-accent: #e8d7ac;
+  --clr-accent-hover: #d4a373;
 }
