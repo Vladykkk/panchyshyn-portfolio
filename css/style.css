@@ -202,6 +202,15 @@
     margin-bottom: 30px;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:visited {
+      color: inherit;
+    }
+  }
+
   .gallery-button:hover {
     transition: var(--transition);
     background-color: var(--clr-accent-hover);
@@ -233,6 +242,10 @@
         inline-size: 100%;
         aspect-ratio: 16 / 9;
         object-fit: cover;
+      }
+
+      .title {
+        color: var(--clr-primary);
       }
 
       p {
