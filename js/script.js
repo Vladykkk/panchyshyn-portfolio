@@ -60,14 +60,18 @@ function addDataToHTML() {
   let listProductHTML = document.querySelector(".media-scroller");
 
   if (products != null) {
-    products.forEach((product) => {
+    products.forEach((product, index) => {
       let newProduct = document.createElement("a");
       newProduct.href = "../html/detail.html?id=" + product.id;
       newProduct.classList.add("item");
+
+      if (index % 6 === 0) newProduct.classList.add("span-2-rows");
+      if (index % 6 === 1) newProduct.classList.add("span-2-cols");
+      if (index % 6 === 4) newProduct.classList.add("span-2-cols");
+
       newProduct.innerHTML = `
 		 <div class="media-element">
 		 <img src="${product.image}">
-		 <h2 class="title">${product.name} ${product.size} ${product.year}</h2>
 		 </div>
 		 `;
       listProductHTML.appendChild(newProduct);
